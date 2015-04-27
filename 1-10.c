@@ -15,13 +15,13 @@ int main ()
 	while ((c = getchar()) != EOF) {
 		switch(c){
 			case '\t':
-				printf("\t");
+				printf("\\t");
 				break;		
 			case '\b':
-				printf("\b");
+				printf("\\b");
 				break;
-			case '/':
-				printf("/");
+			case '\\':
+				printf("\\\\");
 				break;
 			default:
 				putchar(c);
